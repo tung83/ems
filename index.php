@@ -15,7 +15,7 @@
         <div class="top clearfix">
             <img src="<?=selfPath?>logo.png" class="logo"/>
             <div class="hotline">
-                <i class="fa fa-phone"></i> 0123 456 789
+                <i class="glyphicon glyphicon-phone-alt"></i> 0123 456 789
             </div>
             <div class="top-menu">
                 <?=top_menu($db,$view)?>
