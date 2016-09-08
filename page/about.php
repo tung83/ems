@@ -101,13 +101,17 @@ class about{
             <li><a href="#">'.$cate['title'].'</a></li>';
         }
         $str.='
-        </ul>
-        <div class="about-header">
-        
-        </div>';
+        </ul>';
         return $str;
     }
     
+    function about_header(){
+        $str='
+        <div class="about-header">        
+        </div>';
+        return $str;
+    }
+            
     function about_item($item){
         $lnk=myWeb.$this->view.'/'.common::slug($item['title']).'-i'.$item['id'];
         $str.='

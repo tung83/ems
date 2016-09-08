@@ -122,21 +122,22 @@ function home($db){
 function customer($db){
     common::page('customer');
     $cs=new customer($db);
-    $str=$cs->breadcrumb();
+    $str=wrap_breadcrumb($cs->breadcrumb());
     $str.=$cs->customer_cate();
     return $str;
 }
 function contact($db){
     common::page('contact');
     $contact=new contact($db);
-    $str=$contact->breadcrumb();
+    $str=wrap_breadcrumb($contact->breadcrumb());
     $str.=$contact->contact();
     return $str;
 }
 function about($db){
     common::page('about');
     $about=new about($db);
-    $str=$about->breadcrumb();
+    $str=wrap_breadcrumb($about->breadcrumb());
+    $str.=$about->about_header();
     if(isset($_GET['id'])){
         $str.=$about->about_one();
     }else{
@@ -145,10 +146,17 @@ function about($db){
     return $str;
 }
 
+function wrap_breadcrumb($str){
+    $wrapped_str ='<div id="breadcrumb" class="container">' 
+            . $str
+            . '</div>';
+    return $wrapped_str;
+}
+
 function faqs($db){
     common::page('faqs');
     $faqs=new faqs($db);
-    $str=$faqs->breadcrumb();
+    $str=wrap_breadcrumb($faqs->breadcrumb());
     $str.='
     <section id="page-container">
         <div class="container clearfix faqs-container">
@@ -172,7 +180,7 @@ function faqs($db){
 function serv($db){
     common::page('serv');
     $serv=new serv($db);
-    $str=$serv->breadcrumb();
+    $str=wrap_breadcrumb($serv->breadcrumb());
     if(isset($_GET['id'])){
         $str.=$serv->serv_one();
     }else{
@@ -183,7 +191,7 @@ function serv($db){
 function news($db){
     common::page('news');
     $news=new news($db);
-    $str=$news->breadcrumb();
+    $str=wrap_breadcrumb($news->breadcrumb());
     if(isset($_GET['id'])){
         $str.=$news->news_one();
     }else{
@@ -194,7 +202,7 @@ function news($db){
 function product($db,$view){
     common::page('product');
     $pd=new product($db,$view);
-    $str=$pd->breadcrumb();
+    $str=wrap_breadcrumb($pd->breadcrumb());
     if(isset($_GET['id'])){
         $id=intval($_GET['id']);
         $str.=$pd->product_one($id);

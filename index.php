@@ -64,9 +64,6 @@ switch($view){
                 <div class="clearfix">
                     <?=foot_menu($db,$view)?>
                 </div>
-                <div class="social">
-                    <img src="<?=selfPath?>social.png" alt="" title=""/>
-                </div>
             </div>
             <div id="footer-qtext">
                 <?=common::qtext($db,4)?>
