@@ -15,6 +15,9 @@ ul{
 a{
     text-decoration:none
 }
+h1,h2,h3{
+    font-weight: bold;
+}
 header,footer{
     min-width:1220px
 }
@@ -406,6 +409,20 @@ section#domain-check{
     background:#f0f0f0;
     padding:30px 20px
 }
+
+section#domain-check .input-group{    
+    padding:15px 0px;
+}
+
+section#domain-check .input-group .form-control{    
+    height: 50px;
+}
+
+section#domain-check .input-group .btn{    
+    padding: 15px 55px;
+    border: 0;
+    text-transform: uppercase;
+}
 section#domain-check>div{
     text-align:center;
     width:900px;
@@ -484,9 +501,6 @@ section#ind-serv .ind-serv-item a h3{
     font-weight:bold;
     text-align:center;
     margin-bottom:15px  
-}
-section#ind-serv .ind-serv-item a p{
-    text-align:center;
 }
 section#past-web-design{
     padding:30px 20px
