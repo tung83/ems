@@ -38,7 +38,7 @@ class faqs{
         $list=$this->db->where('active',1)->orderBy('ind','ASC')->orderBy('id')->get('faqs',5,'id,title');
         $str='
         <section id="ind-faqs">
-            <div class="container clearfix">
+            <div class="clearfix">
                 <div class="left">';
         foreach($list as $item){
             $str.='
@@ -47,9 +47,6 @@ class faqs{
             </a>';
         }  
         $str.='
-                </div>
-                <div class="right">
-                    <img src="'.selfPath.'faqs_background.jpg" class="img-responsive" title="" alt=""/>
                 </div>
             </div>
         </section>';

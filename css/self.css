@@ -25,10 +25,6 @@ article img{
     max-width:100%
 }
 
-#breadcrumb{
-    padding-left: 20px;
-}
-
 .breadcrumb{
     margin-bottom:0px
 }
@@ -71,11 +67,12 @@ article img{
 /*===End Basic class===*/
 
 section#ind-faqs{
-    padding:20px 0px;
-    background:#eee
+    padding:90px 0 20px 77px;
+    background:#eee url(/file/self/faqs_background.jpg) no-repeat top right;
+    height: 730px;
 }
 section#ind-faqs .left{
-    width:670px;float:left;
+    width:500px;float:left;
 }
 section#ind-faqs .left a{
     display:block;
@@ -84,7 +81,7 @@ section#ind-faqs .left a{
     padding:15px;
     background:#fff;
     color:#141414;
-    border-radius:5px;
+    border-radius:7px;
 }
 section#ind-faqs .left a:after{
     border-color:transparent #fff ;
@@ -108,8 +105,10 @@ section#ind-faqs>.container>.right{
     float:right
 }
 
+header,footer{
+    background: url("/file/self/header_background.png") repeat top left;
+}
 header{
-    background-image: url("/file/self/header_background.png");
     height:152px;  
     position:relative;  
 }
@@ -230,7 +229,7 @@ header .bottom .bottom_menu ul li {
     position:relative
 }
 header .bottom .bottom_menu ul li:first-child{
-    margin-left:0px
+    margin-left:-10px
 }
 header .bottom .bottom_menu ul li a em{
     display:block;
@@ -247,7 +246,7 @@ header .bottom .bottom_menu ul li a em:last-child{
 header .bottom .bottom_menu ul li a span{
     display:block;
     float:left;
-    background:url(/file/self/bottom_mid_background.png) repeat-x;
+    background:url(/file/self/bottom_mid_background.png) repeat-x top left;
     color:#4a4a4a;
     border-bottom:none;
     height:33px;
@@ -270,12 +269,15 @@ header .bottom .bottom_menu ul li.active a span,header .bottom .bottom_menu ul l
 }
 
 footer .footer .container{
-    padding: 25px 15px 10px 15px;
+    padding: 55px 15px 40px 30px;
+    position:relative;
+    background:url(/file/self/ems_footer_background.png) no-repeat;
+    background-position: 1010px 0;
+    width: 1240px;
 }
 footer .footer{
-    padding:30px 20px;
-    background:#141414 url(/file/self/ems_footer_background.png) no-repeat top right;
-    font-size: 14px;        
+    font-size: 14px;  
+    background: rgba(25, 25, 25, .5);
 }
 footer .footer #footer-menu{
     width:50%;
@@ -376,21 +378,23 @@ footer #address-details > p.email:before{
 footer #address-details > p.website:before{
     content: '\f0ac';
 }
-
-
-footer .social{
-    position:relative;
-    height: 80px;
+footer #bottom-right{
+    position: absolute;    
+    bottom: 20px;
+    right:22px;
 }
-footer .social img{
-    display:block;
-    position:absolute;
-    bottom:0px
+
+footer .footer-map {
+    margin-right: 35px;
+}
+footer .footer-barcode {
+    float: right;
+    width: 100px;
+    height: 100px;
 }
 footer .copyright{
     padding:5px 0px ;
     text-align:center;
-    background:#0c0c0c;
     color:#929292;
     font-size: 11px;
     line-height: 28px;
@@ -404,7 +408,7 @@ section{
 }
 section#domain-check{
     background:#f0f0f0;
-    padding:30px 20px
+    padding:30px 0;
 }
 section#domain-check>div{
     text-align:center;
@@ -415,6 +419,7 @@ section#domain-check>div h2{
     color:#3d87c4;
     text-transform:uppercase;
     font-size:20px;
+    font-weight: bold;
 }
 #domain-check .btn,#domain-check input[type="text"]{
     border-radius:0px
@@ -489,7 +494,7 @@ section#ind-serv .ind-serv-item a p{
     text-align:center;
 }
 section#past-web-design{
-    padding:30px 20px
+    padding:100px 0;
 }
 section#past-web-design h2:nth-child(1){
     text-align:center;
@@ -502,7 +507,7 @@ section#past-web-design p:nth-child(1){
     border:1px solid #f00 !important
 }
 section#web-design{
-    padding:30px 20px;
+    padding:30px 0;
     background:#eee
 }
 section#web-design h2{
@@ -590,7 +595,7 @@ section#web-design p{
 }
 
 section#ind-news{
-    padding:30px 20px
+    padding:62px 20px 30px 20px
 }
 section#ind-news .background{
     /*float:left;
@@ -656,7 +661,7 @@ section#ind-news .your-class>div h2{
 }
 */
 section#ads_banner{
-    padding:20px 0px
+    padding:100px 0px
 }
 section#page-container{
     padding:30px 0px
@@ -674,12 +679,18 @@ section#page-container{
     top:auto;
     bottom:15px;    
     box-shadow: -2px 4px 4px -2px rgba( 178, 178, 178, .4 );
+/*    -moz-box-shadow: -2px 4px 4px -20000px #B2B2B2;
+    -webkit-box-shadow: -2px 4px 4px -20000px #B2B2B2;
+    box-shadow: -2px 4px 4px -20000px #B2B2B2;*/
 }
 .triangle-right.right:nth-child(odd) {
-    width: 700px;
+    width: 535px;
 }
 .triangle-right{
-    box-shadow: 0px 0px 6px #B2B2B2;
+    /*box-shadow: 0px 0px 6px #B2B2B2;*/
+    -moz-box-shadow: 4px 4px 2px #B2B2B2;
+    -webkit-box-shadow: 10px 2px 5px #B2B2B2;
+    box-shadow: 4px 4px 2px #B2B2B2;
 }
 
 .faqs-container .left{

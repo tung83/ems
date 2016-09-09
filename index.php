@@ -33,29 +33,31 @@
     </div>
 </header>
 <?php
+$str='';
 switch($view){
     case 'gioi-thieu':
-        echo about($db);
+        $str = about($db);
         break;
     case 'hoi-dap':
-        echo faqs($db);
+        $str = faqs($db);
         break;
     case 'tin-tuc':
-        echo news($db);
+        $str = news($db);
         break;
     case 'dich-vu':
-        echo serv($db);
+        $str = serv($db);
         break;
     case 'lien-he':
-        echo contact($db);
+        $str = contact($db);
         break;
     case 'khach-hang':
-        echo customer($db);
+        $str = customer($db);
         break;
     default:
-        echo home($db);
+        $str = home($db);
         break;
 }
+echo wrap_body_content($str);
 ?>
 <footer>    
     <div class="footer clearfix">
@@ -67,6 +69,10 @@ switch($view){
             </div>
             <div id="footer-qtext">
                 <?=common::qtext($db,4)?>
+            </div>
+            <div id="bottom-right">
+                <img src="/file/self/footer_map.png" class="footer-map">
+                <img src="/file/self/footer_barcode.png" class="footer-barcode">
             </div>
         </div>
     </div>
