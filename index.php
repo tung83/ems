@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
     <title>.:EMSVN.com:.</title>
 	<link rel="icon" type="image/png" href="<?=selfPath?>logo.png"/> 
     <?=common::basic_css()?>

@@ -177,7 +177,7 @@ header .hotline{
     background:#de4a4a;
     color:#fff;
     font-size:22px;
-    position:relative
+    position:relative;
 }
 header .hotline > i{
 	margin-right: 10px;
@@ -275,7 +275,7 @@ footer .footer .container{
     padding: 55px 15px 40px 30px;
     position:relative;
     background:url(/file/self/ems_footer_background.png) no-repeat;
-    background-position: 1010px 0;
+    background-position: 990px 0;
     width: 1240px;
 }
 footer .footer{
@@ -383,7 +383,7 @@ footer #address-details > p.website:before{
 }
 footer #bottom-right{
     position: absolute;    
-    bottom: 20px;
+    bottom: 48px;
     right:22px;
 }
 
