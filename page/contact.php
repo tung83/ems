@@ -59,40 +59,36 @@ class contact{
             <h1>'.contact.'</h1>
             <p>EMSVN luôn lắng nghe ý kiến của khách hàng.</p>
         </div>
-            <div class="container">
-                <div class="row contact-wrap" style="padding:40px 0px"> 
+            <div class="container padding-container">
+                <div class="row contact-wrap"> 
                     <div class="status alert alert-success" style="display: none"></div>
                     <form data-toggle="validator" role="form" class="contact-form" name="contact-form" method="post" action="">
                         <div class="col-sm-6">
                             <p>
                             '.common::qtext($this->db,3).'
                             </p>
+                            <h4 id="contact-header-title">Form liên hệ</h4>
                             <div class="form-group">
-                                <label>Họ Tên *</label>
-                                <input type="text" name="name" class="form-control" required/>
+                                <input type="text" name="name" class="form-control" placeholder="Họ tên khách hàng" required/>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <label>Email *</label>
-                                <input type="email" name="email" class="form-control" required/>
+                                <input type="text" name="company_name" class="form-control" placeholder="Tên công ty" required/>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <label>Điện Thoại</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="address" class="form-control" placeholder="Địa chỉ" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>                            
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required/>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Điện thoại">
                             </div>   
                             <div class="form-group">
-                                <label>Địa Chỉ</label>
-                                <input type="text" class="form-control">
-                            </div>    
-                            <div class="form-group">
-                                <label>Chủ Đề *</label>
-                                <input type="text" name="subject" class="form-control" required/>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <label>Nội Dung Tin Nhắn *</label>
-                                <textarea name="message" id="message" required class="form-control" rows="8"></textarea>
+                                <textarea name="message" id="message" placeholder="Nội dung" required class="form-control" rows="13"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>                        
                             <div class="form-group">
@@ -106,7 +102,7 @@ class contact{
                         </div>
                         <div class="col-sm-6">
                             <div class="gmap">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.055422631661!2d106.69673731421496!3d10.807067261583935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528c096513faf%3A0xb604d8b3d555b84b!2zNDlBIELDuWkgxJDDrG5oIFR1w70sIFBoxrDhu51uZyAyNCwgQsOsbmggVGjhuqFuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1472448762214" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.055422631661!2d106.69673731421496!3d10.807067261583935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528c096513faf%3A0xb604d8b3d555b84b!2zNDlBIELDuWkgxJDDrG5oIFR1w70sIFBoxrDhu51uZyAyNCwgQsOsbmggVGjhuqFuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1472448762214" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </form> 

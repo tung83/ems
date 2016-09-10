@@ -30,14 +30,25 @@ article img{
 }
 
 .breadcrumb{
-    margin-bottom:0px
+    margin-bottom:0px;
+    padding: 15px;
 }
 .breadcrumb li a{
-    color:#939393
+    color:#939393;
+    font-size: 11px;
+        
+}
+.breadcrumb > li + li:before {
+     content: "\203a";
+     color: #aaa;
 }
 .container{
     width:1220px;
     padding: 0px;
+}
+.padding-container{
+    padding-right:15px;
+    padding-left:15px;
 }
 /*===Basic class===*/
 .clearfix:after {
@@ -318,7 +329,7 @@ footer .footer-menu li a:hover,footer .footer-menu li a.active{
     /*border: 1px dashed #e8ebee;*/
 }
 
-footer hr {
+hr {
     display: block;
     height: 1px;
     border: 0;
@@ -326,21 +337,21 @@ footer hr {
     margin: 1em 0;
     padding: 0; 
 }
-footer #company-info p{
+#company-info p{
     margin: 10px 0px 0px 45px;
 }
-footer #company-info p:first-of-type{
+#company-info p:first-of-type{
     font-size: 14px;
 }
-footer #company-info p:nth-of-type(2){
+#company-info p:nth-of-type(2){
     font-size: 16px;
 }
 
-footer #address-details > p{
+#address-details > p{
     position: relative;
     padding-left: 45px;
 }
-footer #address-details p:before{
+#address-details p:before{
     position: absolute;
     margin-left: -25px;
     font-size: 15px;
@@ -348,32 +359,32 @@ footer #address-details p:before{
     color: #333;
 }
 
-footer #address-details > p.location:before{
+#address-details > p.location:before{
     content: '\f041';
 }
 
-footer #address-details > p.phone:before{
+#address-details > p.phone:before{
     content: '\e183';
     font-family: 'Glyphicons Halflings';
 }
 
-footer #address-details > p.hotline:before{
+#address-details > p.hotline:before{
     content: '\f095';
 }
 
-footer #address-details > p.fax:before{
+#address-details > p.fax:before{
     content: '\f02f';
 }
 
-footer #address-details > p.mst:before{
+#address-details > p.mst:before{
     content: '\f1f9';
 }
 
-footer #address-details > p.email:before{
+#address-details > p.email:before{
     content: "\f0e0";
 }
 
-footer #address-details > p.website:before{
+#address-details > p.website:before{
     content: '\f0ac';
 }
 footer #bottom-right{
@@ -741,9 +752,20 @@ section#contact-page .contact-header{
     padding:34px 60px;
     color:#fff
 }
-section#contact-page .contact-header h1{
-    
+section#contact-page #contact-header-title{
+    text-transform: uppercase;
+    margin-top: 54px;
+    margin-bottom: 17px;
 }
+section#contact-page .contact-wrap{
+    padding-top: 125px;
+}
+section#contact-page button{
+    padding: 10px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+contact-header
 section#contact-page input[type="text"],section#contact-page input[type="email"],section#contact-page textarea,section#contact-page input[type="number"]{
     border-radius:0px !important
 }
