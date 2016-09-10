@@ -1,5 +1,6 @@
 @import url('fonts.css');
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic&subset=vietnamese);
+
 body{
     font-family:arial;
     font-size:13px;
@@ -165,7 +166,15 @@ header .top-menu ul li a.active span,header .top-menu ul li a:hover span{
     background:#0081ea;
     color:#fff;
     position:relative;
-    text-decoration:none
+    text-decoration:none;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    header .top-menu ul li a.active span,header .top-menu ul li a:hover span{
+        border-bottom:1px transparent;
+        margin-bottom: -1px;
+    }
 }
 header .top-menu ul li a.active i,header .top-menu ul li a:hover i{
     color:#fff
@@ -237,13 +246,13 @@ header .bottom .bottom_menu ul li a span{
     background:url(/file/self/bottom_mid_background.png) repeat-x top left;
     color:#4a4a4a;
     border-bottom: none;
-/*    border-right:1px transparent;
-    border-left:1px transparent;*/
+    border-right:1px transparent;
+    border-left:1px transparent;
+    margin: 0 -1px;
     height:33px;
     line-height:33px;
     font-weight:bold;
     padding:0px 5px;
-    /*margin: 0 -1px;*/
     
         
 }
