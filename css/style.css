@@ -389,7 +389,7 @@ Text Domain: dt_themes
 	.container { width:1170px; margin:0 auto; position:relative; }
 	
 	.wrapper { clear:both; width:100%; margin:0px; padding:0px; float:left; }
-	.boxed .wrapper { width:1240px; margin:0 auto; float:none; }
+	.boxed .wrapper { width:1220px; margin:0 auto; float:none; }
 	.inner-wrapper { margin: 0; width:100%; float:left; padding:0px; }
 	.boxed .inner-wrapper { background: #fff; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; }
 	
@@ -560,7 +560,7 @@ Text Domain: dt_themes
  	#header:after { background-image: url("images/header-bg.png"); background-position: right center; background-repeat: no-repeat; content: ""; height: 129px; position: absolute; bottom: 6px; right: 10px; width: 290px; z-index: 99; }	
 		
 	.is-sticky #header-wrapper { background: #292929; z-index: 9999; }
-	.boxed .is-sticky #header-wrapper { width: 1240px; }
+	.boxed .is-sticky #header-wrapper { width: 1220px; }
 	.is-sticky #header { border-bottom: 2px solid; padding: 0; }
 	.is-sticky #header:before { content: ""; height: 100%; bottom: -2px; left: 0; position: absolute; width: 100%; box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.55); -webkit-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.55); -moz-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.55); -ms-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.55); -o-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.55); transition: height 0.3s ease 0s; -webkit-transition: height 0.3s ease 0s; -moz-transition: height 0.3s ease 0s; -ms-transition: height 0.3s ease 0s; -o-transition: height 0.3s ease 0s; } 
 	
@@ -1007,7 +1007,7 @@ Text Domain: dt_themes
 		.fullwidth-section.dark-bg .dt-sc-ico-content.type7 .icon { border-color: #fff; background: none; }
 		.fullwidth-section.dark-bg .dt-sc-ico-content.type7:hover .icon { background: #fff; }
 
-		.fullwidth-section #newsletter input[type="email"], .fullwidth-section .newsletter-form input[type="text"] { border-right: none; color: }
+		.fullwidth-section #newsletter input[type="email"], .fullwidth-section .newsletter-form input[type="text"] { border-right: none; }
 		.fullwidth-section.dark-bg #newsletter input[type="email"], .fullwidth-section.dark-bg .newsletter-form input[type="text"], .fullwidth-section.dark-bg .newsletter-form .dt-sc-button { border-color: #fff; }
 		.fullwidth-section.dark-bg .newsletter-form .dt-sc-button { background: #fff; color: #9c9c9c; }
 		.fullwidth-section.dark-bg .newsletter-form .dt-sc-button:hover { background: #f5f5f5; border-color: #fff !important; color: #333334; }

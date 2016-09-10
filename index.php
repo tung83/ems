@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>.:EMSVN.com:.</title>
 	<link rel="icon" type="image/png" href="<?=selfPath?>logo.png"/> 
@@ -61,8 +62,8 @@ switch($view){
 echo wrap_body_content($str);
 ?>
 <footer>    
-    <div class="footer clearfix">
-        <div class="container">
+    <div class="container">
+        <div class="footer clearfix">
             <div id="footer-menu">
                 <div class="clearfix">
                     <?=foot_menu($db,$view)?>
@@ -78,9 +79,7 @@ echo wrap_body_content($str);
         </div>
     </div>
     <div class="copyright">
-        <div class="container">
             Copyright &copy; 2016 <a>EMSVN</a>. All rights reserved
-        </div>
     </div>
 </footer>
 </body>

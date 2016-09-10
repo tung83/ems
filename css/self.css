@@ -174,29 +174,14 @@ header .hotline{
     float:right;
     margin-top:35px;
     padding:5px 20px 7px 22px;
-    background:#de4a4a;
     color:#fff;
     font-size:22px;
     position:relative;
+    background: url(/file/self/phone-bg.png) no-repeat;
 }
 header .hotline > i{
 	margin-right: 10px;
     
-}
-
-header .hotline:after {
-    right: 100%;
-    top: 50%;
-    border: solid transparent;
-    margin-top: -17px;
-    width: 0; 
-    height: 0; 
-    position: absolute;
-    pointer-events: none;
-    content: " ";
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent; 
-    border-right:9px solid #de4a4a;
 }
 header .bottom{
     position:absolute;
@@ -251,11 +236,16 @@ header .bottom .bottom_menu ul li a span{
     float:left;
     background:url(/file/self/bottom_mid_background.png) repeat-x top left;
     color:#4a4a4a;
-    border-bottom:none;
+    border-bottom: none;
+/*    border-right:1px transparent;
+    border-left:1px transparent;*/
     height:33px;
     line-height:33px;
     font-weight:bold;
-    padding:0px 5px
+    padding:0px 5px;
+    /*margin: 0 -1px;*/
+    
+        
 }
 header .bottom .bottom_menu ul li.active,header .bottom .bottom_menu ul li:hover{
     z-index:200 !important
@@ -271,16 +261,12 @@ header .bottom .bottom_menu ul li.active a span,header .bottom .bottom_menu ul l
     color:#fff
 }
 
-footer .footer .container{
+footer .footer{
     padding: 55px 15px 40px 30px;
     position:relative;
-    background:url(/file/self/ems_footer_background.png) no-repeat;
-    background-position: 990px 0;
-    width: 1240px;
-}
-footer .footer{
+    background: rgba(25, 25, 25, .5) url(/file/self/ems_footer_background.png) no-repeat;
+    background-position: 970px 0;
     font-size: 14px;  
-    background: rgba(25, 25, 25, .5);
 }
 footer .footer #footer-menu{
     width:50%;

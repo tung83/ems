@@ -51,7 +51,6 @@ class product{
     function ind_product(){
         $str='
         <section id="web-design">
-        <div class="container">
             <div class="wow fadeInDown row">
                 <h2>Các mẫu website mới</h2>
                 <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>  
@@ -67,7 +66,6 @@ class product{
             </ul>';
         }        
         $str.='   
-        </div>
         </section>';
         return $str;
     }

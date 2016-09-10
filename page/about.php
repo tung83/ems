@@ -165,7 +165,6 @@ class about{
         $count=$this->db->totalCount;
         $str='
         <section id="ind-serv">
-        <div class="container">
             <div class="ind-serv wow fadeInUp" data-wow-duration="1s">
             <h2>Giới Thiệu IT EMSVN</h2>
             <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>';
@@ -189,7 +188,6 @@ class about{
         }   
         $str.='
             </div>
-        </div>
         </section>'; 
         $pg = new Pagination();
         $pg->pagenumber = $page;
@@ -215,7 +213,6 @@ class about{
         $item=$this->db->where('id',$id)->getOne('about');
         $str='
         <section id="ind-serv">
-        <div class="container">
             <div class="ind-serv wow fadeInUp" data-wow-duration="1s">
             <h2>Tin Tức IT EMSVN</h2>
             <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>';
@@ -227,7 +224,6 @@ class about{
         </article>';
         $str.='
             </div>
-        </div>
         </section>';                 
         return $str;
     }

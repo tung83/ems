@@ -60,7 +60,6 @@ class serv{
             $list=$this->db->get('serv',null);
             $str='
             <section id="ind-serv">
-            <div class="container">
                 <div class="ind-serv wow fadeInUp" data-wow-duration="1s">
                 <h2>Dịch vụ EMSVN trọn gói</h2>
                 <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>        
@@ -79,7 +78,6 @@ class serv{
             $str.='
                 </ul>
                 </div>
-            </div>
             </section>';
             return $str;
         }        
@@ -106,13 +104,11 @@ class serv{
         $id=intval($_GET['id']);
         $item=$this->db->where('id',$id)->getOne('serv');
         $str='
-        <div class="container">
         <div class="ind-serv wow fadeInUp" data-wow-duration="1s"> 
         <article class="article">
             <h1 class="article text-center">'.$item['title'].'</h1>
             <p>'.$item['content'].'</p>
         </article>
-        </div>
         </div>';
         return $str;
     }
@@ -121,7 +117,6 @@ class serv{
         $list=$this->db->get('serv',null);
         $str='
         <section id="ind-serv">
-        <div class="container">
             <div class="ind-serv wow fadeInUp" data-wow-duration="1s">
             <h2>Dịch vụ EMSVN trọn gói</h2>
             <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>        
@@ -140,7 +135,6 @@ class serv{
         $str.='
             </div>
             </div>
-        </div>
         </section>';
         return $str;
     }

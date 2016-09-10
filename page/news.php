@@ -94,7 +94,6 @@ class news{
         $count=$this->db->totalCount;
         $str='
         <section id="ind-serv">
-        <div class="container">
             <div class="ind-serv wow fadeInUp" data-wow-duration="1s">
             <h2>Tin Tức IT EMSVN</h2>
             <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>';
@@ -118,7 +117,6 @@ class news{
         }   
         $str.='
             </div>
-        </div>
         </section>'; 
         $pg = new Pagination();
         $pg->pagenumber = $page;
@@ -144,7 +142,6 @@ class news{
         $item=$this->db->where('id',$id)->getOne('news');
         $str='
         <section id="ind-serv">
-        <div class="container">
             <div class="ind-serv wow fadeInUp" data-wow-duration="1s">
             <h2>Tin Tức IT EMSVN</h2>
             <p>Check out the Windows website, which has more information, downloads, and ideas for the most out</p>';
@@ -156,7 +153,6 @@ class news{
         </article>';
         $str.='
             </div>
-        </div>
         </section>';                 
         return $str;
     }
@@ -166,7 +162,6 @@ class news{
         $list=$this->db->get('news',20,'id,title,sum,img');
         $str='
         <section id="ind-news" class="clearfix">
-        <div class="container">
         <div class="row">
             <div class="background col-xs-4">
                 
@@ -187,7 +182,6 @@ class news{
         $str.='
                 </div>
             </div>
-        </div>
         </section>';
         return $str;
     }
